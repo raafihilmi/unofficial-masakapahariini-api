@@ -450,7 +450,6 @@ const Controller = {
       published = author[1].trim();
       author = author[0].trim();
       thumbs = element.find('picture.thumbnail').find('img').attr('src');
-      console.log(thumbs);
       element.find('._rich-content').each((i, e) => {
         description = $(e).find('p').text().trim();
         descriptionRaw = $(e).html().trim();
@@ -478,7 +477,6 @@ const Controller = {
         results: article_object,
       });
     } catch (error) {
-      console.log(error);
       throw error;
     }
   },
